@@ -31,6 +31,7 @@ ul{
     padding-right: 15px;
     margin-left:auto;
     margin-right: auto;
+    max-width: 100%;
 }
 .main-heading{
     padding: 10px 20px;
@@ -261,7 +262,7 @@ header .container .mega-nav .mega-nav-links a i{
 /* media queiries */
 @media (max-width:768px) {
     header .container .mega-nav .mega-nav-links{
-        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
           
     }
     header .container .mega-nav .mega-nav-links:first-of-type{
@@ -978,7 +979,7 @@ header .container .mega-nav .mega-nav-links a i{
 }
 .work-steps .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 40px;
 
 }
@@ -1109,7 +1110,6 @@ header .container .mega-nav .mega-nav-links a i{
 }
 .events .container .event .counter div > span:first-child{
     font-size: 35px;
-    width: 100%;
     padding: 15px;
     color: var(--main-color);
     font-weight: bold;
@@ -1118,6 +1118,17 @@ header .container .mega-nav .mega-nav-links a i{
     flex-direction: column;
     border-bottom: 1px solid #d4d4d4;
     transition: var(--transition-duration);
+}
+@media (max-width:768px) {
+    .events .container .event .counter div > span:first-child{
+        font-size: 20px;
+        padding: 5px;
+        
+    }
+    .events .container .event .counter div{
+
+        width: 40px;        
+    }
 }
 .events .container .event .counter div > span:last-child{
     padding: 5px 10px;
@@ -1153,7 +1164,7 @@ header .container .mega-nav .mega-nav-links a i{
 
 .events form input[type="email"]{
     padding: 20px;
-    width: 400px;
+    width: 350px;
     border-radius: 50px;
     background-color: white;
     border: none;
@@ -1429,6 +1440,13 @@ header .container .mega-nav .mega-nav-links a i{
     .videos .container{
         flex-direction: column;
         
+    }
+    .videos .container .videos-list{
+        min-width: 30%;
+        border: 1px solid #dddddd;
+    }
+    .videos .container .preview{
+        border: 1px solid #dddddd;
     }
 }
 /* videos ends */
