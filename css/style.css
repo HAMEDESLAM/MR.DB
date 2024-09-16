@@ -1104,6 +1104,7 @@ header .container .mega-nav .mega-nav-links a i{
     flex-direction: column;
     width: 80px;
     border-radius: 5px;
+    transition: var(--transition-duration);
     
 }
 .events .container .event .counter div > span:first-child{
@@ -1116,10 +1117,17 @@ header .container .mega-nav .mega-nav-links a i{
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid #d4d4d4;
+    transition: var(--transition-duration);
 }
 .events .container .event .counter div > span:last-child{
     padding: 5px 10px;
     font-size: 13px;
+}
+.events .container .event .counter div:hover{
+    border: 1px solid var(--main-color);
+}
+.events .container .event .counter div:hover > span:first-child{
+    border-bottom: 1px solid var(--main-color);
 }
 .events .container .event h3{
     font-size: 30px;
@@ -1329,7 +1337,7 @@ header .container .mega-nav .mega-nav-links a i{
     font-size: 18px;
     font-weight: bold;
     top:40px;
-    right: 10px;
+    right: -20px;
     padding: 10px 10px;
     background-color: var(--main-color);
     color: white;
