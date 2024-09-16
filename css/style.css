@@ -1735,4 +1735,21 @@ header .container .mega-nav .mega-nav-links a i{
     text-align: center;
     border-top: 1px solid #444444;
 }
+@media (max-width:768px) {
+    .footer .container .info .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footer .container .info .card i{
+        color: var(--main-color);
+        font-size: 25px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer .container ul li a{
+        text-align: center;
+    }
+}
 /* footer ends */
