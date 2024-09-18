@@ -992,6 +992,8 @@ header .container .mega-nav .mega-nav-links a i{
     }
     .work-steps .container  img{
         max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
     }
 
 }
