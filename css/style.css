@@ -978,17 +978,23 @@ header .container .mega-nav .mega-nav-links a i{
     position: relative;
 }
 .work-steps .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    grid-gap: 40px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .work-steps .container  img{
-    width: 100%;
     max-width: 100%;
-    
+    margin-right: 100PX;
 }
+@media (max-width:992px) {
+    .work-steps .container{
+        flex-direction: column;
+    }
+    .work-steps .container  img{
+        max-width: 100%;
+    }
 
+}
 .work-steps .container .steps{
     display: flex;
     flex-direction: column;
@@ -1033,6 +1039,9 @@ header .container .mega-nav .mega-nav-links a i{
     width: 64px;
     height: 64px;
     margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .work-steps .container .steps .step h3{
     margin-top: 10px;
@@ -1768,6 +1777,6 @@ header .container .mega-nav .mega-nav-links a i{
     }
     .footer .container ul li a{
         text-align: center;
-    }
+    } 
 }
 /* footer ends */
