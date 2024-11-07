@@ -937,14 +937,14 @@ header .container .mega-nav .mega-nav-links a i{
     position: relative;
     margin-bottom: 20px;
 }
-.skills .container .skills-container .skill div::after{
-    content: "";
+.skills .container .skills-container .skill div span{
     position: absolute;
     top:0;
     left:0;
-    width: var(--skill-ratio);
+    width: 0;
     height: 100%;
     background-color: var(--main-color);
+    transition: 0.5s;
     z-index: 2;
 }
 .skills .container .skills-container .skill div::before{
