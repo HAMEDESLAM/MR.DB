@@ -123,6 +123,35 @@ ul{
 
 /* ======================================================================== */
 
+
+.to-top{
+    position: fixed;
+    display: none;
+    left:93%;
+    top:90%;
+    z-index: 999;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:2px solid #ddd;
+    background-color: white;
+    font-size: 15px;
+    color: var(--main-color);
+    transition: display 2s  ;
+    cursor: pointer;
+    animation: arrow-button 1.5s ease-out infinite ;
+
+}
+@keyframes arrow-button{
+    0%,10%,20%,30%,50%,70%,80%,90%,100%{
+        transform: translateX(-50%) translateY(0px) rotate(180deg);
+    }
+
+    40%,60%{
+        transform: translateX(-50%) translateY(-15px) rotate(180deg);
+    }
+}
 /* Header  starts*/
 header{
     width: 100%;
